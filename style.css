@@ -1,0 +1,91 @@
+body {
+  background-color: lightgrey;
+}
+
+.navigation {
+  background-color: black;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.navigation a {
+  float: left;
+  color: lightgrey;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.navigation a.active {
+  background-color : lightblue;
+  color : black;
+}
+
+.exercises {
+  text-align: center;
+  padding: 10%;
+  line-height: 100px;
+}
+
+.exercises button, .input_button {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    color: blue;
+}
+
+.paragraph_div {
+  color: #011e32;
+  font-size : 20px;
+  height : 200px;
+  width: 800px;
+  margin: 5px;
+  float: right;
+  word-wrap : break-word;
+  line-height : 1;
+}
+
+#eng_img {
+   height: 500px;
+   width: 750px;
+}
+
+#linus_img {
+  height: 600px;
+  width : 413px;
+  float: left;
+}
+
+.iframe {
+  padding: 50px;
+  width: 800;
+  height: 200;
+}
+
+.selectors {
+  float: left;
+  line-height: 2;
+}
+
+#css_paragraph {
+  height : 200px;
+  width: 800px;
+  margin: 5px;
+  float: right;
+  word-wrap : break-word;
+  line-height : 1;
+  borde
