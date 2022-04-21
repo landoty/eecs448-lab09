@@ -10,14 +10,63 @@
   <div class="navigation" id="navbar">
     <a class="active">Lab 09</a>
     <a onclick="load_exercise(1)">Multiplication Table</a>
-    <a>Quiz</a>
+    <a onclick="load_exercise(2)">Quiz</a>
     <a>Web Store</a>
   </div>
-  <div class="exercises" id="mult_table" style="display:none">
-    <?php include 'exercise_1.php';?>
+  <div id="mult_table" style="display:none">
+    <br><br>
+    <?php include 'mult_table.php';?>
   </div>
-  <div class="exercises" id="quiz" style="display:none">
-
+  <div id="quiz" style="display:none">
+    <form id="quiz_form" action="./quiz.php">
+      <br><br><p>1. What is my favorite color of the alphabet</p>
+        <input type="radio" id="seven" name="question_1">
+        <label for="seven">Seven</label><br>
+        <input type="radio" id="blue" name="question_1">
+        <label for="blue">Blue</label><br>
+        <input type="radio" id="afternoon" name="question_1">
+        <label for="afternoon">Afternoon</label><br>
+        <input type="radio" id="green" name="question_1">
+        <label for="green">Green</label><br>
+      <p>2. Which language did I learn first</p>
+        <input type="radio" id="cpp" name="question_2">
+        <label for="cpp">C++</label><br>
+        <input type="radio" id="lc3_assembly" name="question_2">
+        <label for="lc3_assembly">LC-3 Assembly</label><br>
+        <input type="radio" id="python" name="question_2">
+        <label for="python">Python</label><br>
+        <input type="radio" id="enligsh" name="question_2">
+        <label for="enligsh">English</label><br>
+      <p>3. What is the Endianness of the IA-64 Processor</p>
+        <input type="radio" id="little" name="question_3">
+        <label for="little">Little</label><br>
+        <input type="radio" id="optional" name="question_3">
+        <label for="optional">Optional</label><br>
+        <input type="radio" id="big" name="question_3">
+        <label for="big">Big</label><br>
+        <input type="radio" id="reverse" name="question_3">
+        <label for="reverse">Reverse</label><br>
+      <p>4. How many numbers are in the alphabet</p>
+        <input type="radio" id="none" name="question_4">
+        <label for="none">None</label><br>
+        <input type="radio" id="twenty_six" name="question_4">
+        <label for="twenty_six">26</label><br>
+        <input type="radio" id="zero" name="question_4">
+        <label for="zero">0</label><br>
+        <input type="radio" id="infinite" name="question_4">
+        <label for="infinite">Infinite</label><br>
+      <p>5. Choose the right answer</p>
+        <input type="radio" id="all_below" name="question_5">
+        <label for="all_below">All of the below</label><br>
+        <input type="radio" id="one_above" name="question_5">
+        <label for="one_above">One of the above</label><br>
+        <input type="radio" id="none_above" name="question_5">
+        <label for="none_above">None of the above</label><br>
+        <input type="radio" id="none_above_2" name="question_5">
+        <label for="none_above_2">None of the above</label><br>
+      <br>
+        <input type="submit" value="Submit Quiz">
+    </form>
   </div>
   <div class="exercises" id="web_store" style="display:none">
 
