@@ -13,4 +13,14 @@ function load_exercise(exercise) {
       document.getElementById(exercises[i]).style.display = "none";
     }
   }
+  remove_quiz_results();
+}
+
+function remove_quiz_results() {
+  try {
+    document.getElementById("quiz_results").remove();
+  }
+  catch(error) {
+    return;
+  }
 }
