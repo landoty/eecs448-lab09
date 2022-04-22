@@ -14,4 +14,4 @@ Create a quiz using HTML forms and process answers using PHP
 
 Create a Web Store of selected items using HTML, CSS, and Javascript. On the client side, validate input with Javascript. On the server side, generate a receipt using PHP
 
-Hosted via (KU EECS)[https://people.eecs.ku.edu/~l371d072/eecs448/lab09/lab_09.html]
+Hosted via [KU EECS](https://people.eecs.ku.edu/~l371d072/eecs448/lab09/lab_09.html)
