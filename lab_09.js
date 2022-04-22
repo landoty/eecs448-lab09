@@ -37,6 +37,7 @@ function load_exercise(exercise) {
 //Clears any form data
 function clear_form() {
 	document.getElementById("quiz_form").reset();
+  document.getElementById("order_form").reset();
 }
 function remove_quiz_results() {
   try {
