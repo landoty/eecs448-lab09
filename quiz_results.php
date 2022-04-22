@@ -1,11 +1,12 @@
 <?php
   //Get quiz answers and score
   $score = 0;
-  ($_POST["question_1"]=="blue") ? $score+=20 : null;
-  ($_POST["question_2"]=="english") ? $score+=20 : null;
-  ($_POST["question_3"]=="optional") ? $score+=20 : null;
-  ($_POST["question_4"]=="infinite") ? $score+=20 : null;
-  ($_POST["question_5"]=="none of the above") ? $score+=20 : null;
+  //If no answer is selected for any question, PHP will exit. This also prevents showing answers on page refresh
+  ($_POST["question_1"]=="blue") ? $score+=20 : exit();
+  ($_POST["question_2"]=="english") ? $score+=20 : exit();
+  ($_POST["question_3"]=="optional") ? $score+=20 : exit();
+  ($_POST["question_4"]=="infinite") ? $score+=20 : exit();
+  ($_POST["question_5"]=="none of the above") ? $score+=20 : exit();
 
   include "./lab_09.html";
   echo "<br><br><div id=\"quiz_results\">";

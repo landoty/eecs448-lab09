@@ -15,7 +15,10 @@ function load_exercise(exercise) {
   }
   remove_quiz_results();
 }
-
+//Clears any form data
+function clear_form() {
+	document.getElementById("quiz_form").reset();
+}
 function remove_quiz_results() {
   try {
     document.getElementById("quiz_results").remove();
