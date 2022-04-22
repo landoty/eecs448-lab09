@@ -80,15 +80,15 @@
       <h2>Order Form</h2>
       <form id="order_form" onsubmit="./process_order.php" method="post">
         <label for="username">Username: </label>
-        <input type="text" id="username" name="username" placeholder="name@domain.com">
+        <input type="text" id="username" name="Username" placeholder="name@domain.com">
         <label for="password">Password: </label>
-        <input type="password" id="password" name="password" placeholder="password"><br>
+        <input type="password" id="password" name="Password" placeholder="password"><br>
         <label for="heart_chip">Heart Chip (Quantity)</label>
-        <input type="text" id="heart_chip" name="heart_chip" placeholder="0"><br>
+        <input type="text" id="heart_chip" name="Heart Chip" placeholder="0"><br>
         <label for="kanye_air">Donda Drop Air (Quanity)</label>
-        <input type="text" id="kanye_air" name="kanye_air" placeholder="0"><br>
+        <input type="text" id="kanye_air" name="Donda Air" placeholder="0"><br>
         <label for="tortilla_blanket">Tortiall Blanket (Quanity)</label>
-        <input type="text" id="tortilla_blanket" name="tortilla_blanket" placeholder="0"><br><br>
+        <input type="text" id="tortilla_blanket" name="Tortilla Blanket" placeholder="0"><br><br>
         <h3>Shipping and Handling</h3>
         <input type="radio" value="seven_day" name="shipping">
         <label for="seven_day">Seven Days (Free)</label>
@@ -96,7 +96,7 @@
         <label for="three_day">Three Days ($5)</label>
         <input type="radio" value="overnight" name="shipping">
         <label for="overnight">Overnight ($50)</label><br><br>
-        <button class="store_btn" id="reset" type="button" onclick="clear_forms()">Reset Order</button>
+        <input type="reset" class="store_btn" id="reset"></button>
         <input type="submit" class="store_btn" value="Place Order" onclick="check_form()">
       </form>
     </div>
