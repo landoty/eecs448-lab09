@@ -32,6 +32,7 @@ function load_exercise(exercise) {
     }
   }
   remove_quiz_results();
+  remove_receipt();
 }
 //Clears any form data
 function clear_form() {
@@ -40,6 +41,15 @@ function clear_form() {
 function remove_quiz_results() {
   try {
     document.getElementById("quiz_results").remove();
+  }
+  catch(error) {
+    return;
+  }
+}
+
+function remove_receipt() {
+  try {
+    document.getElementById("receipt").remove();
   }
   catch(error) {
     return;
@@ -113,4 +123,5 @@ function check_form() {
     alert("Must pick shipping option!");
     return false;
   }
+  return true;
 }
