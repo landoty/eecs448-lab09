@@ -38,6 +38,6 @@ else {
 }
 echo "<tr><th>Shipping</th><td></td><td>$shipping_method</td><td>$".$shipping_total."</td></tr>";
 //Total Cost
-$total_cost = $heart_chip_total = $kanye_air_total +$tortilla_blanket_total + $shipping_total;
+$total_cost = $heart_chip_total = $heart_chip_total + $kanye_air_total +$tortilla_blanket_total + $shipping_total;
 echo "<tr><th>Total Cost</th><td></td><td></td><th>$".$total_cost."</th></tr></table></div>";
 ?>
