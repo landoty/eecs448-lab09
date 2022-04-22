@@ -44,48 +44,35 @@ body {
 }
 
 .title {
+    line-height : 150px;
     text-align: center;
     color: blue;
 }
 
-.paragraph_div {
-  color: #011e32;
-  font-size : 20px;
-  height : 200px;
-  width: 800px;
-  margin: 5px;
-  float: right;
-  word-wrap : break-word;
-  line-height : 1;
-}
-
-#eng_img {
+#store_img {
    height: 500px;
-   width: 750px;
+   width: 650px;
 }
 
-#linus_img {
-  height: 600px;
-  width : 413px;
-  float: left;
+#image_div {
+  float:left;
+  text-align : center;
 }
 
-.iframe {
-  padding: 50px;
-  width: 800;
-  height: 200;
+h2 {
+  text-align: center;
 }
 
-.selectors {
-  float: left;
-  line-height: 2;
+.store_btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-#css_paragraph {
-  height : 200px;
-  width: 800px;
-  margin: 5px;
-  float: right;
-  word-wrap : break-word;
-  line-height : 1;
-  borde
+#ordering {
+  float : right;
+  text-align: left;
+  padding-right: 10%;
+  line-height: 2.5;
+}

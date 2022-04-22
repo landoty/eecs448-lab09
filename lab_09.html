@@ -11,14 +11,14 @@
     <a class="active">Lab 09</a>
     <a onclick="load_exercise(1)">Multiplication Table</a>
     <a onclick="load_exercise(2)">Quiz</a>
-    <a>Web Store</a>
+    <a onclick="load_exercise(3)">Web Store</a>
   </div>
   <div id="mult_table" style="display:none">
     <br><br>
     <?php include 'mult_table.php';?>
   </div>
   <div id="quiz" style="display:none">
-    <form id="quiz_form" action="./quiz_results.php" method="post">
+    <form id="quiz_form" onsubmit="./quiz_results.php" method="post">
       <br><br><p>1. What is my favorite color of the alphabet</p>
         <input type="radio" value="seven" name="question_1">
         <label for="seven">Seven</label><br>
@@ -68,8 +68,38 @@
         <input type="submit" value="Submit Quiz">
     </form>
   </div>
-  <div class="exercises" id="web_store" style="display:none">
-
+  <div id="web_store" style="display:none">
+    <h1 class="title">Welcome to the Store!</h1>
+    <div id="image_div" style="display:none">
+      <h2 id="items">Heart Chip $100</h2><br>
+      <img id="store_img" src="./imgs/heart_chip.jpg"><br><br>
+      <button class="store_btn" id="previous" type="button" onclick="previous()">Previous</button>
+      <button class="store_btn" id="next" type="button" onclick="next()">Next</button>
+    </div>
+    <div id="ordering" style="display:none">
+      <h2>Order Form</h2>
+      <form id="order_form" onsubmit="./process_order.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="name@domain.com">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="password"><br>
+        <label for="heart_chip">Heart Chip (Quantity)</label>
+        <input type="text" id="heart_chip" name="heart_chip" placeholder="0"><br>
+        <label for="kanye_air">Donda Drop Air (Quanity)</label>
+        <input type="text" id="kanye_air" name="kanye_air" placeholder="0"><br>
+        <label for="tortilla_blanket">Tortiall Blanket (Quanity)</label>
+        <input type="text" id="tortilla_blanket" name="tortilla_blanket" placeholder="0"><br><br>
+        <h3>Shipping and Handling</h3>
+        <input type="radio" value="seven_day" name="shipping">
+        <label for="seven_day">Seven Days (Free)</label>
+        <input type="radio" value="three_day" name="shipping">
+        <label for="three_day">Three Days ($5)</label>
+        <input type="radio" value="overnight" name="shipping">
+        <label for="overnight">Overnight ($50)</label><br><br>
+        <button class="store_btn" id="reset" type="button" onclick="clear_forms()">Reset Order</button>
+        <input type="submit" class="store_btn" value="Place Order" onclick="check_form()">
+      </form>
+    </div>
   </div>
 </body>
 </html>
